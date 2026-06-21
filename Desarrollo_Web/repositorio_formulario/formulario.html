@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagina Formulario - Alonso García</title>
+        <style type="text/css">
+            
+            input[type='text']:invalid{
+                border-color: red;
+            }
+            input[type='text']:valid{
+                border-color: green;
+            }
+            input[type='text']:focus{
+                outline: none;
+            }
+
+            a:hover{
+                color: #2980b9;
+            }
+            a:link{
+                color: #2980b9;
+            }
+            a:visited{
+                color: #2980b9;
+            }
+            a:active{
+                color: #2980b9;
+            }
+
+        </style>
+    </head>
+    <body style="font-family: Arial;background-color: #f4f7f6;color: #333;padding: 20px;">
+    
+    <a href="../index.html" style="float: right; background-color: #34495e; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 14px;"> &#127968; Volver al Inicio</a>
+
+    <center style="background-color: #ffffff; max-width: 600px; margin: 0 auto; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+        <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px; margin-top: 0;">Formulario de Registro</h2>
+
+        <form action="mailto:adasd@dasda.es" method="post" enctype="text/plain">
+
+            <fieldset style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: #fafafa;">
+
+                <legend style="font-weight: bold; color: #2980b9; background: #fff; padding: 0 10px; border: 1px solid #ddd; border-radius: 3px;">Datos Personales</legend>
+                
+                <center style="margin-bottom: 15px;">
+
+                    <label for="nombre" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Nombre completo:</label>
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="edad" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Edad:</label>
+
+                    <input type="number" id="edad" name="edad" min="18" max="100" placeholder="Mínimo 18 años" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="fecha_nac" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Fecha de nacimiento:</label>
+
+                    <input type="date" id="fecha_nac" name="fecha_nac" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Género:</label>
+
+                    <center style="float: left; gap: 15px; align-items: center; flex-wrap: wrap;">
+
+                        <label style="font-weight: normal; float: left; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="radio" name="genero" value="masculino"> Masculino</label>
+
+                        <label style="font-weight: normal; float: left; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="radio" name="genero" value="femenino"> Femenino</label>
+
+                        <label style="font-weight: normal; float: left; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="radio" name="genero" value="otro"> Otro</label>
+
+                    </center>
+
+                </center>
+
+            </fieldset>
+
+            <fieldset style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: #fafafa;">
+                
+                <legend style="font-weight: bold; color: #2980b9; background: #fff; padding: 0 10px; border: 1px solid #ddd; border-radius: 3px;text-align: left;">Contacto y Cuenta</legend>
+
+                <center style="margin-bottom: 15px;">
+                    
+                    <label for="email" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Correo electrónico:</label>
+                    
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+                    
+                    <label for="telefono" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Teléfono (con código de área):</label>
+                    
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" pattern="[\+]\d{2} \d{3} \d{3} \d{3}" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+                    
+                    <label for="password" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Contraseña:</label>
+                    
+                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="pais" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">País de residencia:</label>
+
+                    <select id="pais" name="pais" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                        <option value="" disabled selected>Selecciona un país...</option>
+
+                        <option value="es">España</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                        <option value="cl">Chile</option>
+                        <option value="ot">Otro</option>
+
+                    </select>
+
+                </center>
+
+            </fieldset>
+
+            <fieldset style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: #fafafa;">
+
+                <legend style="font-weight: bold; color: #2980b9; background: #fff; padding: 0 10px; border: 1px solid #ddd; border-radius: 3px;">Preferencias y Perfil</legend>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="hora_contacto" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Mejor hora para contactarte:</label>
+                    
+                    <input type="time" id="hora_contacto" name="hora_contacto" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="foto" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Foto de perfil (solo JPG, PNG):</label>
+                    
+                    <input type="file" id="foto" name="foto" accept=".jpg, .jpeg, .png" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="color" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Color favorito:</label>
+                    
+                    <input type="color" id="color" name="color" value="#ff2400" style="width: 100%; cursor: pointer; padding: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; height: 40px;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+
+                    <label for="nivel" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Nivel de experiencia con tecnología (1-100):</label>
+                    
+                    <input type="range" id="nivel" name="nivel" min="1" max="100" value="50" style="width: 100%; cursor: pointer;">
+
+                </center>
+
+                <center style="margin-bottom: 15px;">
+                    
+                    <label style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Intereses (marca las que apliquen):</label>
+                    
+                    <center style="display: flex; clear: both;gap: 15px; align-items: center; flex-wrap: wrap;">
+                       
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="checkbox" name="intereses" value="musica"> Música</label>
+
+                        <label style="font-weight: normal; display: flex; align-items: center; gap: 5px; margin-bottom: 0; cursor: pointer;"><input type="checkbox" name="intereses" value="lectura"> Lectura</label>
+
+                    </center>
+                </center>
+
+                <center style="margin-bottom: 15px;">
+                    
+                    <label for="bio" style="float: left; font-weight: 600; margin-bottom: 5px;text-align: left;">Breve biografía:</label>
+                    
+                    <textarea id="bio" name="bio" rows="4" placeholder="Cuéntanos un poco sobre ti..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; resize: vertical;"></textarea>
+
+                </center>
+            </fieldset>
+
+            <center style="margin-bottom: 15px;">
+            
+                <label style="font-weight: normal; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                    <input type="checkbox" name="terminos" required><a href="https://protecciondatos-lopd.com/empresas/he-leido-y-acepto-la-politica-de-privacidad/" target="_blank">Acepto los términos y condiciones y la política de privacidad.</a>
+                </label>
+
+            </center>
+
+            <center style="justify-content: space-between; margin-top: 20px;">
+                
+                <button type="reset" style="padding: 12px 25px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; background-color: #e74c3c; color: white;">Limpiar datos</button>
+
+                <button type="submit" style="padding: 12px 25px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; background-color: #27ae60; color: white;">Registrarse</button>
+                
+            </center>
+
+        </form>
+
+    </center>
+
+    </body>
+</html>
